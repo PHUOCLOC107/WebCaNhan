@@ -339,8 +339,8 @@ body, html{
 .infor_sub{
         display: none;
         position: absolute;
-        left: 720px;
-        bottom: 120px;
+        left: 700px;
+        bottom: -50px;
         background-color: white;
         padding-left: 20px; /* Để tạo khoảng trống cho mũi tên */
 
