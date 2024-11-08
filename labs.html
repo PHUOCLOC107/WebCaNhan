@@ -73,7 +73,7 @@
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="lab1.html">Lab 1</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white active-lab" href="lab1.html">Lab 1</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="login.html">Lab 2</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="lab3.html">Lab 3</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="lab4.html">Lab 4</a></li>
@@ -87,44 +87,75 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
-
-       
-        <!-- CV Start -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card text-center">
-                        <img src="img/about.png" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 150px; height: 150px; ">
-                        <div class="card-body">
-                            <h5 class="card-title">Nguyễn Văn A</h5>
-                            <p class="card-text">Sinh viên năm 3 - Lập trình viên web</p>
-                            <p><strong>Email:</strong> nguyenvana@example.com</p>
-                            <p><strong>Phone:</strong> +012 345 6789</p>
-                        </div>
-                    </div>
+        <div class="container">
+            <!-- Header -->
+            <h1 style="display: flex; justify-content: center;">Lab 1</h1>
+        
+            <!-- Course Form for Create and Edit -->
+            <form id="courseForm" class="form">
+                <!-- Read-only: Course ID (Auto-generated) -->
+                <div class="form-group">
+                    <label for="courseId">Course ID:</label>
+                    <input type="text" id="courseId" name="courseId" readonly placeholder="Auto-generated">
                 </div>
-
-                <div class="col-lg-8 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">Thông Tin Cá Nhân</h5>
-                        </div>
-                        <div class="card-body">
-                            <p><strong>Giới thiệu:</strong> Tôi là một sinh viên năm 3 chuyên ngành Công nghệ thông tin, đam mê lập trình và phát triển web.</p>
-                            <p><strong>Kỹ Năng:</strong></p>
-                            <ul class="list-group">
-                                <li class="list-group-item">HTML, CSS, JavaScript</li>
-                                <li class="list-group-item">React, Angular</li>
-                                <li class="list-group-item">PHP, MySQL</li>
-                            </ul>
-                            <p><strong>Học Vấn:</strong></p>
-                            <p>Bằng cử nhân Công nghệ thông tin, Đại học XYZ, 2022</p>
-                        </div>
-                    </div>
+        
+                <!-- Course Name (Required) -->
+                <div class="form-group">
+                    <label for="courseName">Course Name <span class="required">*</span> : </label>
+                    <input type="text" id="courseName" name="courseName" maxlength="255" required placeholder="Enter course name">
                 </div>
+        
+                <!-- Course Description (Optional) -->
+                <div class="form-group">
+                    <label for="courseDescription">Course Description:</label>
+                    <textarea id="courseDescription" name="courseDescription" placeholder="Enter course description"></textarea>
+                </div>
+        
+                <!-- Course Instructor (Dropdown/Search) -->
+                <div class="form-group">
+                    <label for="instructor">Instructor:</label>
+                    <select id="instructor" name="instructor" required>
+                        <option value="">Select Instructor</option>
+                        <option value="1">John Doe</option>
+                        <option value="2">Jane Smith</option>
+                        <!-- Add more instructors dynamically -->
+                    </select>
+                </div>
+        
+                <!-- Read-only: Created At (Auto-generated) -->
+                <div class="form-group">
+                    <label for="createdAt">Created At:</label>
+                    <input type="text" id="createdAt" name="createdAt" readonly placeholder="Auto-generated timestamp">
+                </div>
+        
+                <!-- Read-only: Last Updated (Auto-updated) -->
+                <div class="form-group">
+                    <label for="updatedAt">Last Updated:</label>
+                    <input type="text" id="updatedAt" name="updatedAt" readonly placeholder="Auto-updated timestamp">
+                </div>
+        
+                <!-- Form Buttons: Submit & Delete -->
+                <div class="form-actions">
+                    <button type="submit" id="saveCourse" class="btn ">Save Course</button>
+                    <button type="button" id="deleteCourse" class="btn btn-danger" onclick="confirmDelete()">Delete Course</button>
+                </div>
+            </form>
+        
+            <!-- View Course Modal -->
+            <div id="viewCourseModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>View Course Details</h2>
+                    <p><strong>Course ID:</strong> <span id="viewCourseId"></span></p>
+                    <p><strong>Course Name:</strong> <span id="viewCourseName"></span></p>
+                    <p><strong>Course Description:</strong> <span id="viewCourseDescription"></span></p>
+                    <p><strong>Instructor:</strong> <span id="viewInstructor"></span></p>
+                    <p><strong>Created At:</strong> <span id="viewCreatedAt"></span></p>
+                    <p><strong>Last Updated:</strong> <span id="viewUpdatedAt"></span></p>
+                 </div>
             </div>
         </div>
-        <!-- CV End -->
+    
 
 
         <!-- Footer Start -->
