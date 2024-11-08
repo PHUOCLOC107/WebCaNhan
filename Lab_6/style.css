@@ -116,7 +116,8 @@ body, html{
 }
 
 .container_develop{
-    margin: 0 auto;
+    margin-left: 120px;
+    margin-right: auto;
     width: 1400px;
     min-height: auto;
 
@@ -339,7 +340,7 @@ body, html{
 .infor_sub{
         display: none;
         position: absolute;
-        left: 700px;
+        left: 770px;
         bottom: -50px;
         background-color: white;
         padding-left: 20px; /* Để tạo khoảng trống cho mũi tên */
