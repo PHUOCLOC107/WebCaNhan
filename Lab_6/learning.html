@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+<style>
+    /* Định dạng chung */
+   .container-xxl {
+   height: 150px;
+   }
+   
+   /* Định dạng breadcrumb */
+   .breadcrumb {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       padding: 0;
+       background-color: transparent;
+       margin: 0;
+   }
+   
+   /* Các breadcrumb item */
+   .breadcrumb-item {
+       display: inline;
+       text-align: center;
+   }
+   
+   .breadcrumb-item a {
+       text-decoration: none;
+       font-size: 1rem;
+       font-weight: 500;
+       color: black;
+       transition: color 0.3s ease;
+       padding: 5px 10px;
+       border-radius: 5px;
+   }
+   
+   .breadcrumb-item a:hover,
+   .breadcrumb-item .active-lab {
+       color: #ffffff;
+       background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+   }
+   
+   /* Căn giữa h1 */
+   h1 {
+       font-size: 2.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+       text-align: center; /* Căn giữa */
+   }
+   
+   .labs{
+     text-decoration: none;
+     color: black;
+   }
+   
+   </style>
+   <body>
+    <div class="container-xxl py-5 bg-primary hero-header">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown"><a class="labs" href="../labs.html">Labs</a></h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white " href="../lab1.html">Lab 1</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../login.html">Lab 2</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab3.html">Lab 3</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab4.html">Lab 4</a></li>
+                            <li class="breadcrumb-item"><a class="text-white  active-lab" href="../lab5.html">Lab 5</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab6.html">Lab 6</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper_learning">
+        <h2 class="first">Learning focused on your goals</h2>
+
+        <div class="section_learning">
+            <div class="sec2" id="section1">
+                <div class="img1">
+                    <img src="img/learn1.png" alt="">
+                </div>
+
+                <div class="learn_text">
+                    <p class="first_text">Hands-on training</p>
+                    <p class="second_text">Upskill effectively with Al-powered coding exercises, paractice tests, and quizzes.</p>
+                </div>
+            </div>
+
+            <div class="sec1">
+                <div class="img1">
+                    <img src="img/learn2.png" alt="">
+                </div>
+
+                <div class="learn_text">
+                    <p class="first_text">Certification prep</p>
+                    <p class="second_text">Prep for industry-recognized certifications bt solving real - world challenges and earn badges along the way.</p>
+                </div>
+            </div>
+
+            <div class="sec1">
+                <div class="img2">
+                    <img src="img/learn3.png" alt="">
+                </div>
+
+                <div class="learn_text">
+                    <div class="learn_btn">
+                        <p class="first_text">Insights and analytics</p>
+                        <p class="enter">Enterprise Plan</p>
+                    </div>
+                    
+                    <p class="second_text">Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.</p>
+                    <div class="find_out_more">
+                        <p class="find">Find out more</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec1">
+                <div class="img2">
+                    <img src="img/learn4.png" alt="">
+                </div>
+
+                <div class="learn_text">
+                    <div class="learn_btn">
+                        <p class="first_text">Customizable content</p>
+                        <p class="enter">Enterprise Plan</p>
+                    </div>
+                    
+                    <p class="second_text">Create tailored learing paths for team and organization goals and even host your own content and resourses.</p>
+                    <div class="find_out_more">
+                        <p class="find">Find out more</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form_score">
+        <div class="header_form">
+            <h3 class="head_score">Containerization</h3>
+            <div class="questions">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>30 question</p>
+            </div>
+        </div>
+
+        <div class="your_score">
+            <h2>Your score: 159</h2>
+            <p>What do these numbers mean?</p>
+        </div>
+
+        <div class="img3">
+            <img src="img/form_score.png" alt="">
+        </div>
+       
+        <div class="light_text">
+            <i class="fa-regular fa-lightbulb"></i>
+            <p>Your performance was better than <span class="eight_eight">88% </span>of Udemy learners who have completed this assessment.</p>
+        </div>
+
+        <div class="answers">
+            <h3>Your answers</h3>
+            <p>Review your answer. Learn from these explanations of correct and incorrect response options.</p>
+        </div>
+
+        <div class="list_answers">
+            <div class="answers_left">
+                <div class="anleft">
+                    <label for="answer">All domains</label>
+                <select name="answer" id="answer" class="custom-select">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                </div>
+
+                <div class="anleft1">
+                    <label for="answer">All answer</label>
+                <select name="answer" id="answer"  class="custom-select">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="answers_right">
+                <div class="anright">
+                    <p class="correct">23 correct</p>
+                    <p class="incorrect">7 incorrect</p>
+                    <p class="skipped">0 skipped</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question_1">
+                <div class="nd">
+                    <div class="ques_correct">
+                        <i class="fa-solid fa-square-check"></i>
+                        <p><span class="eight_eight">Questions 1</span></p>
+                        <p class="cor">Correct</p>
+                    </div>
+                    <p class="text_corr">Which of the following scenarios will benefit most form a managed <br> Kubernetes service, such as AWS'EKS or Google Clound's GKE?</p>
+                </div>                           
+            </div>
+
+            <div class="question_1">
+                <div class="nd">
+                    <div class="ques_correct">
+                        <i class="fa-solid fa-square-check"></i>
+                        <p><span class="eight_eight">Questions 2</span></p>
+                        <p class="cor">Correct</p>
+                    </div>
+                    <p class="text_corr">You containerized a wed application, and onr of the containers is running the database engine. Which of the following strategies is the best to persist the data?</p>
+                </div>
+                
+            
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('section1').addEventListener('click', function() {
+            const formScore = document.querySelector('.form_score');
+            const section = document.getElementById('section1');
+
+            if (formScore.style.display === 'none' || formScore.style.display === '') {
+                formScore.style.display = 'block';
+                section.classList.add('active');
+            } else {
+                formScore.style.display = 'none';
+                section.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

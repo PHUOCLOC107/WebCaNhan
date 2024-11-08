@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<style>
+    /* Định dạng chung */
+   .container-xxl {
+   height: 150px;
+   }
+   
+   /* Định dạng breadcrumb */
+   .breadcrumb {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       padding: 0;
+       background-color: transparent;
+       margin: 0;
+   }
+   
+   /* Các breadcrumb item */
+   .breadcrumb-item {
+       display: inline;
+       text-align: center;
+   }
+   
+   .breadcrumb-item a {
+       text-decoration: none;
+       font-size: 1rem;
+       font-weight: 500;
+       color: black;
+       transition: color 0.3s ease;
+       padding: 5px 10px;
+       border-radius: 5px;
+   }
+   
+   .breadcrumb-item a:hover,
+   .breadcrumb-item .active-lab {
+       color: #ffffff;
+       background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+   }
+   
+   /* Căn giữa h1 */
+   h1 {
+       font-size: 2.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+       text-align: center; /* Căn giữa */
+   }
+   
+   .labs{
+     text-decoration: none;
+     color: black;
+   }
+   
+   
+   </style>
+   <body>
+       <div class="container-xxl py-5 bg-primary hero-header">
+           <div class="container my-5 py-5 px-lg-5">
+               <div class="row g-5 py-5">
+                   <div class="col-12 text-center">
+                       <h1 class="text-white animated slideInDown"><a class="labs" href="../labs.html">Labs</a></h1>
+                       <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                       <nav aria-label="breadcrumb">
+                           <ol class="breadcrumb justify-content-center">
+                               <li class="breadcrumb-item"><a class="text-white " href="../lab1.html">Lab 1</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="../login.html">Lab 2</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="../lab3.html">Lab 3</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="../lab4.html">Lab 4</a></li>
+                               <li class="breadcrumb-item"><a class="text-white  active-lab" href="../lab5.html">Lab 5</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="../lab6.html">Lab 6</a></li>
+                           </ol>
+                       </nav>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="my_learning">My learning</h1>
+            <div class="hours">
+                <p style="font-weight: bold;">87hr 36min</p>
+                <p>watched</p>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p style="font-weight: bold;">View all activity</p>
+            </div>
+
+            <div class="nav_bar">
+                <a href="">All courses</a>
+                <a href="">Learning paths</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="archived.html">Archived</a>
+                <a href="learning_tools.html">Learning tools</a>
+            </div>
+        </div>
+
+        <div class="section_ar">
+            <div class="section_ar_1">
+                <img src="img/anh_nen_1.webp" alt="" width="300px" height="250px">
+                <i class="fa-solid fa-ellipsis-vertical" style="position: relative;bottom: 245px;left: 250px; padding: 15px; background-color: white;"></i>
+
+                <p>Js_Java Script Responsility Training 2024</p>
+                <h4>FS Content Development</h4>
+
+                <div class="percent">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="rate">
+                        <h4>100% Complete</h4>
+                        <div class="star-rating">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                            <h4 style="color: #787878; font-size: 15px; position: relative; left: 100px;">Your rating</h4>
+                        </div>                       
+                    </div>                                      
+                </div>    
+            </div>
+
+            <div class="section_ar_2">
+                <img src="img/anh_nen_2.webp" alt="" width="300px" height="250px">
+                <i class="fa-solid fa-ellipsis-vertical" style="position: relative;bottom: 245px; left: 250px; padding: 15px; background-color: white; border: black 1px solid;"></i>
+
+                <p style="font-weight: bolder; font-size: 20px; position: relative; bottom: 50px;">Java_ Responsility Training 2024</p>
+                <h4 style="color: #787878; position: relative; bottom: 55px;">FS Content Development</h4>
+
+                <div class="percent_2">
+                    <div class="progress-bar_2">
+                        <div class="progress_2" style="width: 90%;"></div>
+                    </div>
+
+                    <div class="rate_2">
+                        <h4 style="color: #787878;position: relative; bottom: 53px;">90% Complete</h4>
+                        <div class="star-rating_2">
+                            <span class="star_2" data-value="1">★</span>
+                            <span class="star_2" data-value="2">★</span>
+                            <span class="star_2" data-value="3">★</span>
+                            <span class="star_2" data-value="4">★</span>
+                            <span class="star_2" data-value="5">★</span>
+                            <h4 style="color: #787878; font-size: 15px; position: relative; left: 230px; bottom: 115px;">Your rating</h4>
+                        </div>                       
+                    </div>                                      
+                </div>    
+            </div>
+
+            <div class="section_ar_3">
+                <img src="img/anh_nen_3.jpg" alt="" width="300px" height="250px">
+                <i class="fa-solid fa-ellipsis-vertical" style="position: relative;bottom: 245px; left: 250px; padding: 15px; background-color: white; "></i>
+
+                <p style="font-weight: bolder; font-size: 20px; position: relative; bottom: 50px;">Python_ Responsility Training 2024</p>
+                <h4 style="color: #787878; position: relative; bottom: 55px;">FS Content Development</h4>
+
+                <div class="percent_3">
+                    <div class="progress-bar_3">
+                        <div class="progress_3" style="width: 50%;"></div>
+                    </div>
+
+                    <div class="rate_3">
+                        <h4 style="color: #787878;position: relative; bottom: 53px;">50% Complete</h4>
+                        <div class="star-rating_3">
+                            <span class="star_3" data-value="1">★</span>
+                            <span class="star_3" data-value="2">★</span>
+                            <span class="star_3" data-value="3">★</span>
+                            <span class="star_3" data-value="4">★</span>
+                            <span class="star_3" data-value="5">★</span>
+                            <h4 style="color: #787878; font-size: 15px; position: relative; left: 230px; bottom: 110px;">Your rating</h4>
+                        </div>                       
+                    </div>                                      
+                </div>    
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const stars1 = document.querySelectorAll('.star');
+    const stars2 = document.querySelectorAll('.star_2');
+    const stars3 = document.querySelectorAll('.star_3');
+
+    function setupStarRating(stars) {
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = parseFloat(this.getAttribute('data-value'));
+                updateStars(stars, rating);
+            });
+        });
+    }
+
+    function updateStars(stars, rating) {
+        stars.forEach(star => {
+            star.classList.remove('filled', 'half'); // Xóa lớp trước đó
+            const starValue = parseFloat(star.getAttribute('data-value'));
+
+            if (starValue < rating) {
+                star.classList.add('filled'); // Ngôi sao đã được chọn
+            } else if (starValue === Math.floor(rating) && rating % 1 !== 0) {
+                star.classList.add('half'); // Ngôi sao nửa nếu giá trị là số thập phân
+            }
+        });
+    }
+
+    // Thiết lập cho cả hai hệ thống đánh giá sao
+    setupStarRating(stars1);
+    setupStarRating(stars2);
+    setupStarRating(stars3);
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_6</title>
+    <link rel="stylesheet" href="Lab_6/style.css">
+</head>
+<style>
+    /* Định dạng chung */
+   .container-xxl {
+   height: 150px;
+   }
+   
+   /* Định dạng breadcrumb */
+   .breadcrumb {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       padding: 0;
+       background-color: transparent;
+       margin: 0;
+   }
+   
+   /* Các breadcrumb item */
+   .breadcrumb-item {
+       display: inline;
+       text-align: center;
+   }
+   
+   .breadcrumb-item a {
+       text-decoration: none;
+       font-size: 1rem;
+       font-weight: 500;
+       color: black;
+       transition: color 0.3s ease;
+       padding: 5px 10px;
+       border-radius: 5px;
+   }
+   
+   .breadcrumb-item a:hover,
+   .breadcrumb-item .active-lab {
+       color: #ffffff;
+       background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+   }
+   
+   /* Căn giữa h1 */
+   h1 {
+       font-size: 2.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+       text-align: center; /* Căn giữa */
+   }
+   
+   .labs{
+     text-decoration: none;
+     color: black;
+   }
+   
+   </style>
+   <body>
+       <div class="container-xxl py-5 bg-primary hero-header">
+           <div class="container my-5 py-5 px-lg-5">
+               <div class="row g-5 py-5">
+                   <div class="col-12 text-center">
+                       <h1 class="text-white animated slideInDown"><a class="labs" href="labs.html">Labs</a></h1>
+                       <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                       <nav aria-label="breadcrumb">
+                           <ol class="breadcrumb justify-content-center">
+                               <li class="breadcrumb-item"><a class="text-white" href="lab1.html">Lab 1</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="login.html">Lab 2</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="lab3.html">Lab 3</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="lab4.html">Lab 4</a></li>
+                               <li class="breadcrumb-item"><a class="text-white" href="lab5.html">Lab 5</a></li>
+                               <li class="breadcrumb-item"><a class="text-white active-lab" href="lab6.html">Lab 6</a></li>
+                           </ol>
+                       </nav>
+                   </div>
+               </div>
+           </div>
+       </div>
+    <div class="header">
+        <div class="header_logo">
+            <h2>Coderbyte</h2>
+        </div>
+        <div class="header_link">
+            <a href="Lab_6/development.html">Developers</a>
+            <a href="">Organizations</a>
+            <a href="">Dashboard</a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="section1_home">
+                <button>FOR ORGANIZATIONS</button>
+        </div>
+
+        <div class="section_center">
+            <p class="p_center">
+                <span class="text_highlight">Evaluate Candidates</span> Quickly,<br> Affordably, and Accurately
+            </p>
+
+            <p class="p_center_2">
+                The #1 for technical assessmaents, interviews, and projects. <br>Get unlimited candidates and admins on every plan.
+            </p>
+        </div>
+        
+        <div class="form_center">
+            <input type="text" id="email" placeholder="Word email address ">
+            <label for="email">Start Trial</label>
+        </div>
+
+        <div class="more">
+            <a href="">Learn more</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="curve"></div>
+
+    </div>
+
+</body>
+</html>

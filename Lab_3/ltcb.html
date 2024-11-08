@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Giảng Java</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Đảm bảo chiều cao đủ */
+        }
+        .container {
+            display: flex; /* Sử dụng flexbox */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 20px; /* Để có chỗ cho button ở dưới cùng */
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #1877f2;
+            margin-top: 20px;
+        }
+        .list-item {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .list-item:hover {
+            background-color: #e0e0e0;
+        }
+        .detail-content {
+            margin-top: 20px;
+        }
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0e5bb5;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="sidebar">
+        <h2>Danh Sách Tài Liệu</h2>
+        <div class="list-item" onclick="showDetail('lecture')">Bài Giảng</div>
+        <div class="list-item" onclick="showDetail('exercise')">Bài Tập</div>
+        <div class="list-item" onclick="showDetail('reference')">Tài Liệu Tham Khảo</div>
+        <a href="../lab3.html" class="back-button">Trở về</a>
+    </div>
+    <div class="content">
+        <h1>Bài Giảng Lập trình cơ bản</h1>
+        <div id="detail-content" class="detail-content">
+            <p>Vui lòng chọn một mục từ bên trái để xem nội dung chi tiết.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const details = {
+        lecture: {
+            title: 'Bài Giảng ',
+            content: 'Nội dung bài giảng ...',
+        },
+        exercise: {
+            title: 'Bài Tập ',
+            content: 'Nội dung bài tập ...',
+        },
+        reference: {
+            title: 'Tài Liệu Tham Khảo ',
+            content: 'Tài liệu tham khảo ...',
+        },
+    };
+
+    function showDetail(type) {
+        const detailContent = document.getElementById('detail-content');
+        detailContent.innerHTML = `
+            <h2>${details[type].title}</h2>
+            <p>${details[type].content}</p>
+        `;
+    }
+</script>
+</body>
+</html>

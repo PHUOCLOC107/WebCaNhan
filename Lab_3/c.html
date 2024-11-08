@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Giảng C#</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Đảm bảo chiều cao đủ */
+        }
+        .container {
+            display: flex; /* Sử dụng flexbox */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 20px; /* Để có chỗ cho button ở dưới cùng */
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #1877f2;
+            margin-top: 20px;
+        }
+        .list-item {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .list-item:hover {
+            background-color: #e0e0e0;
+        }
+        .detail-content {
+            margin-top: 20px;
+        }
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0e5bb5;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>Danh Sách Tài Liệu</h2>
+        <div class="list-item" onclick="showDetail('lecture')">Bài Giảng</div>
+        <div class="list-item" onclick="showDetail('exercise')">Bài Tập</div>
+        <div class="list-item" onclick="showDetail('reference')">Tài Liệu Tham Khảo</div>
+        <a href="../lab3.html" class="back-button">Trở về</a>
+    </div>
+    <div class="content">
+        <h1>Bài Giảng C#</h1>
+        <div id="detail-content" class="detail-content">
+            <p>Vui lòng chọn một mục từ bên trái để xem nội dung chi tiết.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const details = {
+        lecture: {
+            title: 'Bài Giảng C#',
+            content: `Trong bài giảng này, chúng ta sẽ tìm hiểu về ngôn ngữ lập trình C#. 
+                      Chúng ta sẽ bắt đầu từ các khái niệm cơ bản như biến, kiểu dữ liệu, 
+                      cấu trúc điều khiển, cho đến các chủ đề nâng cao hơn như lập trình hướng đối tượng, 
+                      các thư viện tiêu chuẩn và cách xây dựng ứng dụng C#.` 
+        },
+        exercise: {
+            title: 'Bài Tập C#',
+            content: `Sau đây là một số bài tập để bạn thực hành:
+                      <ul>
+                          <li><strong>Bài Tập 1:</strong> Viết một chương trình đơn giản để in ra "Hello, World!".</li>
+                          <li><strong>Bài Tập 2:</strong> Viết chương trình tính tổng của hai số nguyên nhập vào từ bàn phím.</li>
+                          <li><strong>Bài Tập 3:</strong> Viết một hàm kiểm tra số nguyên có phải là số chẵn hay không.</li>
+                      </ul>
+                      Vui lòng nộp bài tập trước thời hạn quy định!`
+        },
+        reference: {
+            title: 'Tài Liệu Tham Khảo',
+            content: `Để tìm hiểu thêm về C#, bạn có thể tham khảo các tài liệu sau:
+                      <ul>
+                          <li>*C# in a Nutshell* - Cuốn sách tổng quan về C#.</li>
+                          <li>*Pro C# 9* - Tài liệu nâng cao cho lập trình viên.</li>
+                          <li>Trang web chính thức của Microsoft: <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">https://docs.microsoft.com/en-us/dotnet/csharp/</a>.</li>
+                      </ul>
+                      Những tài liệu này sẽ giúp bạn hiểu rõ hơn về ngôn ngữ lập trình C# và các ứng dụng của nó.`
+        },
+    };
+
+    function showDetail(type) {
+        const detailContent = document.getElementById('detail-content');
+        detailContent.innerHTML = `
+            <h2>${details[type].title}</h2>
+            <p>${details[type].content}</p>
+        `;
+    }
+</script>
+</body>
+</html>

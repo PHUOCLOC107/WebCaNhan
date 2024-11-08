@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Dashboard</title>
+    <link rel="stylesheet" href="Lab_2/style.css">
+    <script src="Lab_2/app.js" defer></script>
+</head>
+<style>
+/* Định dạng chung */
+.container-xxl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 150px;
+    position: relative;
+    bottom: 300px;
+}
+
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Hiệu ứng tiêu đề */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Tiêu đề Labs */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Khoảng cách nhỏ giữa tiêu đề và breadcrumb */
+}
+
+/* Định dạng breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Khoảng cách giữa các lab */
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    display: inline;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item .active-lab {
+    color: #ffffff;
+    background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+}
+
+hr {
+    border-top: 2px solid white;
+    width: 90px;
+    margin: 10px auto;
+}
+
+</style>
+
+<body>
+    <div class="container-xxl py-5 bg-primary hero-header">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown"><a class="labs" href="labs.html">Labs</a></h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white " href="lab1.html">Lab 1</a></li>
+                            <li class="breadcrumb-item"><a class="text-white active-lab" href="login.html">Lab 2</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="lab3.html">Lab 3</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="lab4.html">Lab 4</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="lab5.html">Lab 5</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="lab6.html">Lab 6</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- Màn hình đăng nhập -->
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity" style="color: #FFD700;">LOGIN</h1>
+                <form>
+                    <input type="text" placeholder="USERNAME" />
+                    <input type="password" placeholder="PASSWORD" />
+                    <!-- Nút SUBMIT dẫn tới trang dashboard.html -->
+                    <a href="Lab_2/dashboard.html">
+                        <button type="button" id="submitButton" class="opacity">SUBMIT</button>
+                    </a>
+                </form>
+                <div class="register-forget opacity">
+                    <a href="">REGISTER</a>
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+</body>
+</html>

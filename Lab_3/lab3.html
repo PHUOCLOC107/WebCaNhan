@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Sách Môn Học</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* Định dạng chung cho breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung */
+    gap: 10px; /* Khoảng cách giữa các lab */
+    padding: 0; /* Không có đệm */
+    background-color: transparent; /* Nền trong suốt */
+    margin: 0; /* Không có khoảng cách bên ngoài */
+}
+
+/* Định dạng cho từng breadcrumb-item */
+.breadcrumb-item {
+    display: inline; /* Hiển thị theo hàng ngang */
+}
+
+.breadcrumb-item a {
+    text-decoration: none; /* Không có gạch chân */
+    font-size: 1rem; /* Kích thước chữ */
+    font-weight: 500; /* Độ đậm của chữ */
+    color: rgba(8, 8, 8, 0.782); /* Màu chữ với độ trong suốt */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+    padding: 5px 10px; /* Khoảng đệm bên trong */
+    border-radius: 5px; /* Bo tròn các góc */
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item .active-lab {
+    color: #ffffff; /* Màu chữ khi hover hoặc đang hoạt động */
+    background-color: rgba(255, 188, 4, 0.811); /* Màu nền khi hover */
+}
+
+/* Định dạng cho tiêu đề Labs */
+h1 {
+    font-size: 2.5rem; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Độ đậm của chữ tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và breadcrumb */
+}
+
+/* Định dạng cho thanh phân cách (hr) */
+hr {
+    border-top: 2px solid white; /* Đường viền trắng */
+    width: 90px; /* Chiều rộng của đường viền */
+    margin: 10px auto; /* Căn giữa với khoảng cách bên trên và bên dưới */
+}
+
+</style>
+<body>
+  <div class="container-xxl py-5 bg-primary hero-header">
+    <div class="container my-5 py-5 px-lg-5">
+        <div class="row g-5 py-5">
+            <div class="col-12 text-center">
+                <h1 class="text-white animated slideInDown">Labs</h1>
+                <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="lab1.html">Lab 1</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab2.html">Lab 2</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab3.html">Lab 3</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab4.html">Lab 4</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab5.html">Lab 5</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab6.html">Lab 6</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab7.html">Lab 7</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="lab8.html">Lab 8</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container"><h1>Danh Sách Môn Học</h1>
+  <input type="text" id="searchInput" placeholder="Tìm kiếm môn học..." onkeyup="searchSubjects()">
+  <div class="grid-container">
+    <div class="grid-item">
+      Java
+      <a href="java.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      C#
+      <a href="c.html"> <span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Python
+      <a href="python.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Cơ sở dữ liệu
+      <a href="csdl.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Mạng máy tính
+      <a href="mmt.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Tin học đại cương
+      <a href="thdc.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Lý thuyết đồ thị
+      <a href="Ltdt.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Lập trình cơ bản
+      <a href="ltcb.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Lập trình mạng
+      <a href="ltm.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Lập trình nâng cao
+      <a href="ltnc.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Toán rời rạc
+      <a href="trr.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Giao tiếp người - máy
+      <a href="gtnm.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Cấu trúc máy tính
+      <a href="ctmt.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Thiết kế hướng đối tượng
+      <a href="tkhdt.html"><span class="view-text">Xem</span></a>
+    </div>
+    <div class="grid-item">
+      Lập trình Wed
+      <a href="ltw.html"><span class="view-text">Xem</span></a>
+    </div>
+  </div></div>
+  <script>
+    function searchSubjects() {
+  const input = removeAccents(document.getElementById('searchInput').value.toLowerCase());
+  const items = document.querySelectorAll('.grid-item');
+
+  items.forEach(item => {
+    const subject = removeAccents(item.textContent.toLowerCase());
+    if (subject.includes(input)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+function removeAccents(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+  </script>
+</body>
+</html>

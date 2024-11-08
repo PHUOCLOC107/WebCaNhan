@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Định dạng chung */
+.container-xxl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 150px;
+    position: relative;
+    bottom: 300px;
+}
+
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Hiệu ứng tiêu đề */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Tiêu đề Labs */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Khoảng cách nhỏ giữa tiêu đề và breadcrumb */
+}
+
+/* Định dạng breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Khoảng cách giữa các lab */
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    display: inline;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item .active-lab {
+    color: #ffffff;
+    background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+}
+
+hr {
+    border-top: 2px solid white;
+    width: 90px;
+    margin: 10px auto;
+}
+</style>
+<body>
+    
+    <div class="container-xxl py-5 bg-primary hero-header">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown">Labs</h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white " href="../lab1.html">Lab 1</a></li>
+                            <li class="breadcrumb-item"><a class="text-white active-lab" href="../login.html">Lab 2</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab3.html">Lab 3</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab4.html">Lab 4</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab5.html">Lab 5</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab6.html">Lab 6</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Submission Results</h1>
+    </header>
+
+    <div id="resultSection">
+        <p id="submissionStatus"></p>
+        <p>Expected Output: <span id="expectedOutput"></span></p>
+        <p>Actual Output: <span id="actualOutput"></span></p>
+        <p>Time Taken: <span id="executionTime"></span> ms</p>
+        <p>Memory Used: <span id="memoryUsed"></span> MB</p>
+        <p>Score: <span id="score"></span></p>
+        <p>Result: <span id="result"></span></p>
+        <p>Ranking: <span id="ranking"></span></p>
+        <button onclick="goToDashboard()">Back to Dashboard</button>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const status = params.get('status');
+        const expectedOutput = params.get('expectedOutput') || "N/A";
+        const actualOutput = params.get('actualOutput') || "N/A";
+        const executionTime = params.get('executionTime') || "N/A";
+        const memoryUsed = params.get('memoryUsed') || "N/A";
+        const testsPassed = parseInt(params.get('testsPassed')) || 0; // Số trường hợp kiểm tra đã vượt qua
+        const totalTests = parseInt(params.get('totalTests')) || 1; // Tổng số trường hợp kiểm tra
+
+    // Calculate score and ranking
+        const score = (testsPassed / totalTests) * 100; // Calculate percentage score
+        const result = score >= 50 ? "Passed" : "Failed"; // Passing condition
+        const ranking = score >= 75 ? "Excellent" : score >= 50 ? "Good" : "Poor"; // Ranking based on score
+
+
+        // Hiển thị kết quả
+        document.getElementById('submissionStatus').textContent = status;
+        document.getElementById('expectedOutput').textContent = expectedOutput;
+        document.getElementById('actualOutput').textContent = actualOutput;
+        document.getElementById('executionTime').textContent = executionTime;
+        document.getElementById('memoryUsed').textContent = memoryUsed;
+        document.getElementById('score').textContent = `${score.toFixed(2)}%`;
+        document.getElementById('result').textContent = result;
+        document.getElementById('ranking').textContent = ranking;
+
+        function goToDashboard() {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>

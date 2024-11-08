@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<style>
+    /* Định dạng chung */
+   .container-xxl {
+   height: 150px;
+   }
+   
+   /* Định dạng breadcrumb */
+   .breadcrumb {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       padding: 0;
+       background-color: transparent;
+       margin: 0;
+   }
+   
+   /* Các breadcrumb item */
+   .breadcrumb-item {
+       display: inline;
+       text-align: center;
+   }
+   
+   .breadcrumb-item a {
+       text-decoration: none;
+       font-size: 1rem;
+       font-weight: 500;
+       color: black;
+       transition: color 0.3s ease;
+       padding: 5px 10px;
+       border-radius: 5px;
+   }
+   
+   .breadcrumb-item a:hover,
+   .breadcrumb-item .active-lab {
+       color: #ffffff;
+       background-color: rgba(255, 188, 4, 0.811); /* Hiệu ứng nền khi hover */
+   }
+   
+   /* Căn giữa h1 */
+   h1 {
+       font-size: 2.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+       text-align: center; /* Căn giữa */
+   }
+   
+   .labs{
+     text-decoration: none;
+     color: black;
+   }
+   
+   </style>
+   <body>
+    <div class="container-xxl py-5 bg-primary hero-header">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown"><a class="labs" href="../labs.html">Labs</a></h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white " href="../lab1.html">Lab 1</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../login.html">Lab 2</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab3.html">Lab 3</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab4.html">Lab 4</a></li>
+                            <li class="breadcrumb-item"><a class="text-white  active-lab" href="../lab5.html">Lab 5</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="../lab6.html">Lab 6</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_develop">
+        <div class="nav_bar">
+            <div class="nav_tab_bar">
+                <a href="">Wed Development</a>
+                <p>13.3M+ learners</p>
+            </div>
+            
+            <div class="nav_tab_bar">
+                <a href="">Java Script</a>
+                <p>17.7M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+                <a href="">React JS</a>
+                <p>7M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+                <a href="">Angular</a>
+                <p>4M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+                <a href="">Java</a>
+                <p>15.5M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+                <a href="">Android Development</a>
+                <p>8M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+
+                <a href="">IOS Development</a>
+                <p>4M+ learners</p>
+            </div>
+            <div class="nav_tab_bar">
+                <a href="">Css</a>
+                <p>9M+ learners</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sub_list">
+                
+                <div class="img">
+                        <img src="img/img1.png" alt="">
+                </div>
+                
+                <div class="text_list">
+                    <h3>The Complete 2024 Wed <br>    Development Bootcamp</h3>
+                    <p>Dr.Angela Yu, Development and Lead...</p>
+                </div>
+
+                <div class="list_rate_vote">
+                    <p class="rate">4.7</p>
+                    <div class="star-rating">                   
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 stars">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 stars">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 stars">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 stars">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 star">★</label>                       
+                    </div>                   
+                    <p class="votes">(409.451)</p>
+                </div>
+                <p class="price"><span class="currency">đ</span>1,666,000</p>
+                <p class="seller">Bestseller</p>
+            </div>
+
+
+            <div class="sub_list">
+                
+                <div class="img">
+                        <img src="img/img2.png" alt="">
+                </div>
+                
+                <div class="text_list">
+                    <h3>The Wed Developer Bootcamp <br> 2024</h3>
+                    <p>Colt Steele</p>
+                </div>
+
+                <div class="list_rate_vote">
+                    <p class="rate">4.7</p>
+                    <div class="star-rating">                   
+                        <input type="radio" id="star5-1" name="rating1" value="5" />
+                        <label for="star5-1" title="5 stars">★</label>
+                        <input type="radio" id="star4-1" name="rating1" value="4" />
+                        <label for="star4-1" title="4 stars">★</label>
+                        <input type="radio" id="star3-1" name="rating1" value="3" />
+                        <label for="star3-1" title="3 stars">★</label>
+                        <input type="radio" id="star2-1" name="rating1" value="2" />
+                        <label for="star2-1" title="2 stars">★</label>
+                        <input type="radio" id="star1-1" name="rating1" value="1" />
+                        <label for="star1-1" title="1 star">★</label>                       
+                    </div>                    
+                    <p class="votes">(276,674)</p>
+                </div>
+                <p class="price"><span class="currency">đ</span>2,399,000</p>
+            </div>
+
+            <div class="sub_list">
+                
+                <div class="img">
+                        <img src="img/img3.png" alt="">
+                </div>
+                
+                <div class="text_list">
+                    <h3>Wed Development Masterclass - Online Certification Course</h3>
+                    <p>You Accel Training</p>
+                </div>
+
+                <div class="list_rate_vote">
+                    <p class="rate">4.3</p>
+                    <div class="star-rating">                   
+                        <input type="radio" id="star5-2" name="rating2" value="5" />
+                        <label for="star5-2" title="5 stars">★</label>
+                        <input type="radio" id="star4-2" name="rating2" value="4" />
+                        <label for="star4-1" title="4 stars">★</label>
+                        <input type="radio" id="star3-2" name="rating2" value="3" />
+                        <label for="star3-1" title="3 stars">★</label>
+                        <input type="radio" id="star2-2" name="rating2" value="2" />
+                        <label for="star2-1" title="2 stars">★</label>
+                        <input type="radio" id="star1-2" name="rating2" value="1" />
+                        <label for="star1-2" title="1 star">★</label>                       
+                    </div>                    
+                    <p class="votes">(10,000)</p>
+                </div>
+                <p class="price"><span class="currency">đ</span>1,499,000</p>
+            </div>
+
+            <div class="sub_list">
+                
+                <div class="img">
+                        <img src="img/img4.png" alt="">
+                </div>
+                
+                <div class="text_list">
+                    <h3>Practical Web Development: 22 <br> Courses in 1</h3>
+                    <p>Creative Online School</p>
+                </div>
+
+                <div class="list_rate_vote">
+                    <p class="rate">4.7</p>
+                    <div class="star-rating">                   
+                        <input type="radio" id="star5-3" name="rating3" value="5" />
+                        <label for="star5-3" title="5 stars">★</label>
+                        <input type="radio" id="star4-3" name="rating3" value="4" />
+                        <label for="star4-3" title="4 stars">★</label>
+                        <input type="radio" id="star3-3" name="rating3" value="3" />
+                        <label for="star3-3" title="3 stars">★</label>
+                        <input type="radio" id="star2-3" name="rating3" value="2" />
+                        <label for="star2-3" title="2 stars">★</label>
+                        <input type="radio" id="star1-3" name="rating3" value="1" />
+                        <label for="star1-3" title="1 star">★</label>                       
+                    </div>                 
+                    <p class="votes">(4,353)</p>
+                </div>
+                <p class="price"><span class="currency">đ</span>449,000</p>
+
+            </div>
+        </div>
+
+        <div class="end_btn" id="end_btn" onclick="toggleInfo()">Show all Web Development Courses</div>
+    
+    </div>
+
+
+
+    <div class="infor_sub" id="infor_sub" >
+        <h3 class="head">The Wed Developer Bootcamp 2024</h3>
+        <p class="update_time">Updated <span class="text_highlight1">October 2024</span></p>
+        <p class="hour_time">74 total hours. All Levels. Subtitles</p>
+        <p class="text">10 Hours of React just added. Become a <br> Developer With ONE course - HTML, CSS,<br> JavaScript, React, Node, MongoDB and More!</p>
+        <div class="check_text">
+            <div class="check_1">
+                <i class="fa-solid fa-check"></i>
+                <p class="text_1">The ins and outs of HTML5, CSS3, and <br> Modern JavaScript for 2021</p>
+            </div>
+            <div class="check_1">
+                <i class="fa-solid fa-check"></i>
+                <p class="text_1">Make REAL web applications using <br> cutting-edge technologies</p>
+            </div>
+            <div class="check_1">
+                <i class="fa-solid fa-check"></i>
+                <p class="text_1">Create responsive, accessible, and <br> beautiful layouts</p>
+            </div>
+        </div>
+        <p class="addcart"><a href="learning.html">Add to cart</a></p>
+        
+    </div>
+
+    <script>
+        function toggleInfo() {
+            const infoSection = document.getElementById('infor_sub');
+            if (infoSection.style.display === 'none' || infoSection.style.display === '') {
+                infoSection.style.display = 'block'; // Hiển thị phần thông tin
+            } else {
+                infoSection.style.display = 'none'; // Ẩn phần thông tin
+            }
+        }
+    </script>
+ 
+</body>
+</html>
