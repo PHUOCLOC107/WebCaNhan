@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div id="preloader">
+<div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+<header id="header">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="header_top">
+        <div class="header_top_left">
+          <ul class="top_nav">
+            <li><a href="webproject.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="headerbottom">
+        <div class="logoarea"><a href="webproject.html" class="logoo"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/banner_nlu.jpg?v=1733478377725" style="width:1140px;height:150px;" alt=""></a></div>
+      </div>
+    </div> 
+  </div> 
+
+</header>
+<section id="navArea">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav main_nav">
+        <li class="active"><a href="webproject.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+        <li><a href="#">GIỚI THIỆU</a></li>
+        <li><a href="#">TRANG THÔNG TIN</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CLB/TỔ/ĐỘI/NHÓM</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">CÂU LẠC BỘ</a></li>
+            <li><a href="#">TỔ</a></li>
+            <li><a href="#">ĐỘI</a></li>
+            <li><a href="#">NHÓM</a></li>
+          </ul>
+        </li> 
+        <li><a href="https://dkmh.hcmuaf.edu.vn/public/#/home">ĐKMH NLU</a></li> 
+      </ul>
+    </div>
+  </nav>
+</section>
+  </section>
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Tin tức mỗi ngày</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Nhà trường tự đăng kí môn học kì II cho sinh viên khóa 50</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Sinh nhật lần thứ 10 của CLB Truyền thông Nông Lâm Radio</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Hàng nghìn cơ hội việc làm tại ngày hội nghề nghiệp 2024</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Chuyến bay khởi hành tại ngày hội tân sinh viên 2024</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Sinh nhật lần thứ 23 của Đội VNXK Nhịp Điệu Xanh có gì</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Thời hạn nộp sổ đoàn viên</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Học bổng khuyến khích học tập</a></li>
+              <li><a href="#"><img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/t%E1%BA%A3i%20xu%E1%BB%91ng%20(1).png?v=1733477756721" alt="">Thời gian làm việc của Phòng Công tác Sinh viên</a></li>
+          </ul>
+          <div class="social_area">
+            <ul class="social_nav">
+              <li class="facebook"><a href="#"></a></li>
+              <li class="googleplus"><a href="#"></a></li>
+              <li class="mail"><a href="#"></a></li>
+              <li class="youtube"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sliderSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="slick_slider">
+          <div class="single_iteam"> <a href="https://ts.hcmuaf.edu.vn/"> <img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/ts2023_1.jpg?v=1733474111961" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://ts.hcmuaf.edu.vn/">TUYỂN SINH ĐẠI HỌC CHÍNH QUY</a></h2>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="https://qmo.nlu.edu.vn/"> <img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/aun_qa.jpg?v=1733474108235" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://qmo.nlu.edu.vn/">ĐẠT CHUẨN AUN-QA</a></h2>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="https://sae.hcmuaf.edu.vn/"> <img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/sea2024.jpg?v=1733476530301" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://sae.hcmuaf.edu.vn/">SAE NLU 2024</a></h2>
+            </div>
+          </div>
+          <div class="single_iteam"> <a> <img src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/slide_2020-17.jpg?v=1733474123141" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="latest_post">
+            <h2><span>chú ý</span></h2>
+            <div class="latest_post_container">
+              <div id="prev-button"><i class="fa fa-chevron-up"></i></div>
+              <ul class="latest_postnav">
+                <li>
+                  <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt=""
+                        src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/hocBa.jpg?v=1733492754382"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title">
+                        Điểm đủ điều kiện trúng tuyển Đại học chính quy năm 2024 Theo phương thức xét kết quả học tập bậc
+                        Trung học phổ thông (Học bạ)
+                      </a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt=""
+                        src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/tiengAnhDauVao.jpg?v=1733492750712"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> 
+                      Quyết định miễn học phần Tiếng Anh không chuyên đầu vào khóa tuyển sinh 2024
+                    </a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt=""
+                        src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/nganhdaotao.png?v=1733492749488"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> 
+                      Quyết định và Đề án mở 06 ngành đào tạo chương trình nâng cao năm 2024
+                    </a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt=""
+                        src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/diemChuan.jpg?v=1733492739346"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> 
+                      Điểm trúng tuyển (điểm chuẩn) đại học hệ chính quy năm 2024 – đợt xét tuyển bổ sung
+                    </a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt=""
+                        src="https://cdn.glitch.global/f63c9505-ec45-45af-bbba-061333dbd6a7/nlu.jpg?v=1733492737691"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> 
+                      Xét tuyển Bổ sung đại học hệ chính quy năm 2024 tại Phân hiệu Gia Lai
+                    </a> </div>
+                  </div>
+                </li>
+              </ul>
+              <div id="next-button"><i class="fa  fa-chevron-down"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_post_content">
+            <h2><span>Business</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav  wow fadeInDown">
+                <li>
+                  <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img1.jpg"> <span class="overlay"></span> </a>
+                    <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
+                    <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="fashion_technology_area">
+            <div class="fashion">
+              <div class="single_post_content">
+                <h2><span>Fashion</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
+                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="single_post_content">
+                <h2><span>Technology</span></h2>
+                <ul class="business_catgnav">
+                  <li>
+                    <figure class="bsbig_fig wow fadeInDown"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img3.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
+                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_post_content">
+            <h2><span>Photography</span></h2>
+            <ul class="photograph_nav  wow fadeInDown">
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img2.jpg" title="Photography Ttile 1"> <img src="images/photograph_img2.jpg" alt=""/></a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img3.jpg" title="Photography Ttile 2"> <img src="images/photograph_img3.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img4.jpg" title="Photography Ttile 3"> <img src="images/photograph_img4.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img4.jpg" title="Photography Ttile 4"> <img src="images/photograph_img4.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img2.jpg" title="Photography Ttile 5"> <img src="images/photograph_img2.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img3.jpg" title="Photography Ttile 6"> <img src="images/photograph_img3.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_post_content">
+            <h2><span>Games</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav">
+                <li>
+                  <figure class="bsbig_fig  wow fadeInDown"> <a class="featured_img" href="pages/single_page.html"> <img src="images/featured_img1.jpg" alt=""> <span class="overlay"></span> </a>
+                    <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
+                    <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_sidebar">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#category" aria-controls="home" role="tab" data-toggle="tab">Category</a></li>
+              <li role="presentation"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
+              <li role="presentation"><a href="#comments" aria-controls="messages" role="tab" data-toggle="tab">Comments</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="#">Sports</a></li>
+                  <li class="cat-item"><a href="#">Fashion</a></li>
+                  <li class="cat-item"><a href="#">Business</a></li>
+                  <li class="cat-item"><a href="#">Technology</a></li>
+                  <li class="cat-item"><a href="#">Games</a></li>
+                  <li class="cat-item"><a href="#">Life &amp; Style</a></li>
+                  <li class="cat-item"><a href="#">Photography</a></li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="video">
+                <div class="vide_area">
+                  <iframe width="100%" height="250" src="http://www.youtube.com/embed/h5QWbURNEpA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="comments">
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Sponsor</span></h2>
+            <a class="sideAdd" href="#"><img src="images/add_img.jpg" alt=""></a> </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Category Archive</span></h2>
+            <select class="catgArchive">
+              <option>Select Category</option>
+              <option>Life styles</option>
+              <option>Sports</option>
+              <option>Technology</option>
+              <option>Treads</option>
+            </select>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Links</span></h2>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Rss Feed</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Life &amp; Style</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Trụ sở</h2>
+             <ul class="tag_nav">
+              <li><a href="#">Trụ sở chính: KP6, Phường Linh Trung, TP Thủ Đức, TP.Hồ Chính Minh, Việt Nam</a></li>
+              <li><a href="#">Phân hiệu Gia Lai: Đường Trần Nhật Duât, Thôn 01, Xã Diên Phú, TP. Pleiku, Gia lai</a></li>
+              <li><a href="#">Phân hiệu Ninh Thuận: Số 8, Đường Yên Ninh, TT.Khánh hải, Ninh Hải, Ninh Thuận</a></li>
+              
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Liên kết</h2>
+            <ul class="tag_nav">
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Danh mục A - Z</a></li>
+              <li><a href="#">Góp ý</a></li>
+              <li><a href="#">Bản đồ</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Liên hệ</h2>
+            <p></p>
+             <p> <i class="glyphicon glyphicon-envelope"></i> newsfeednonglam@gmail.com </p>
+              <p> <i class="fa fa-phone"></i> (+84) 0899999999  </p>
+            <address> <i class="fa-solid fa-location-dot"></i>             
+            Trường Đại Học Nông Lâm Thành Phố Hồ Chí Minh. Khu phố 6, Phường Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh. 
+            </address>
+             
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2024 <a href="../index.html">FIT - NLU</a></p>
+      <p class="developer">Developed By Group 16</p>
+    </div>
+  </footer>
+
+</div>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

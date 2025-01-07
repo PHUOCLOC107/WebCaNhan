@@ -1,0 +1,539 @@
+body {
+    background: #ECF0F7;
+}
+
+@media (max-width: 9000px) {
+    .logoarea img {
+        max-width: 100%; /* Đảm bảo ảnh không bị vượt quá màn hình */
+        height: auto;
+    }
+}
+
+@-webkit-keyframes borderBlink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: red
+    }
+}
+
+@keyframes borderBlink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: blue
+    }
+}
+
+.borderBlink {
+    border: 2px dotted blue;
+    border-bottom: 2px dotted blue;
+
+    -webkit-animation: borderBlink 1s step-end infinite;
+    animation: borderBlink 1s step-end infinite;
+
+    /* add 'border-color: transparent' if you wish no border to show initially */
+}
+
+.borderBlink:hover {
+    border: 2px dotted red;
+    -webkit-animation: borderBlink 1s step-end infinite;
+    animation: borderBlink 1s step-end infinite;
+}
+
+
+
+a {
+    color: rgb(51, 51, 51);
+}
+
+a:hover {
+    transition: .4s;
+    text-decoration: none;
+    color: #5AA428;
+}
+
+.a-block {
+    display: block;
+}
+
+.pd-0 {
+    padding: 0px;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-l5 {
+    padding-left: 5px;
+}
+
+.pd-l20 {
+    padding-left: 20px;
+}
+
+.pd-r5 {
+    padding-right: 5px;
+}
+
+.mr-0 {
+    margin: 0px;
+}
+
+.mr-0im {
+    margin: 0px !important;
+}
+
+.mr-t5 {
+    margin-top: 5px;
+}
+
+.mr-b5 {
+    margin-bottom: 5px;
+}
+
+.cl-blue {
+    color: blue;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.f-s12 {
+    font-size: 12px;
+}
+
+.f-s5 {
+    font-size: 5px;
+}
+
+.cl-nlu {
+    color: #5AA428;
+}
+
+.bg-1 {
+    background: #60A917;
+}
+
+.bg-2 {
+    background: #1BA1E2;
+}
+
+.bg-3 {
+    background: #C29008;
+}
+
+.bg-4 {
+    background: #AA00FF;
+}
+
+.bg-5 {
+    background: #00AFF0;
+}
+
+.bg-6 {
+    background: #00c853;
+}
+
+.bg-7 {
+    background: #87794E;
+}
+
+.bg-8 {
+    background: #DC4FAD;
+}
+
+.bg-9 {
+    background: #D80073;
+}
+
+.bg-10 {
+    background: #6A00FF;
+}
+
+.bg-11 {
+    background: #00CCFF;
+}
+
+.bg-12 {
+    background: #7AD61D;
+}
+
+.bg-title {
+    background: -moz-linear-gradient(top, rgba(216, 216, 216, 0.65) 0%, rgba(216, 216, 216, 0.64) 1%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(216, 216, 216, 0.65) 0%, rgba(216, 216, 216, 0.64) 1%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(216, 216, 216, 0.65) 0%, rgba(216, 216, 216, 0.64) 1%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6d8d8d8', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.style-none {
+    list-style: none;
+}
+
+/*
+* BEGIN header
+*/
+header {
+    position: relative;
+}
+
+.lang {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.lang>li {
+    padding-right: 5px;
+    display: inline-block;
+}
+
+.lang li img {
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.lang a {
+    color: #FFF !important;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.navbar {
+    border: none;
+    border-top: 1px solid #FFF80A;
+    border-bottom: 1px solid #FFF80A;
+}
+
+/*
+* END header
+*/
+
+/*
+* BEGIN content
+*/
+.main-content {
+    box-shadow: 1px 1px 3px #E2E2E2;
+    background: #FFF;
+    padding: 20px;
+}
+
+.group-title {
+    position: relative;
+}
+
+.group-title:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: rgb(180, 227, 145);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(180, 227, 145, 1) 0%, rgba(90, 164, 40, 1) 0%, rgba(193, 226, 167, 1) 58%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(180, 227, 145, 1) 0%, rgba(90, 164, 40, 1) 0%, rgba(193, 226, 167, 1) 58%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(180, 227, 145, 1) 0%, rgba(90, 164, 40, 1) 0%, rgba(193, 226, 167, 1) 58%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4e391', endColorstr='#c1e2a7', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.group-title:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(214, 214, 214);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(214, 214, 214, 1) 0%, rgba(244, 244, 244, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(214, 214, 214, 1) 0%, rgba(244, 244, 244, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(214, 214, 214, 1) 0%, rgba(244, 244, 244, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6d6d6', endColorstr='#f4f4f4', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.group-title h3 {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+}
+
+.group-title-content {
+    color: #FFF !important;
+    background: #5AA428;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.group-title-content:after {
+    position: absolute;
+    right: -28px;
+    top: 0;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 14px solid;
+    border-color: transparent transparent #5AA428 #5AA428;
+}
+
+.style-square>li {
+    list-style: square;
+}
+
+/*--------------
+* END content
+*/
+/*------------------
+* BEGIN aside
+*/
+.aside-content {
+    box-shadow: 1px 1px 3px #E2E2E2;
+    background: #FFF;
+}
+
+.aside-title {
+    height: 28px;
+    line-height: 28px;
+}
+
+.aside-title-content {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    color: #5AA428;
+    font-weight: bold;
+    position: relative;
+}
+
+.aside-title-content:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: rgb(200, 224, 181);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(200, 224, 181, 1) 1%, rgba(90, 164, 40, 1) 52%, rgba(199, 224, 179, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(200, 224, 181, 1) 1%, rgba(90, 164, 40, 1) 52%, rgba(199, 224, 179, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(200, 224, 181, 1) 1%, rgba(90, 164, 40, 1) 52%, rgba(199, 224, 179, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8e0b5', endColorstr='#c7e0b3', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.sidebar-list a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-btn {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+    color: #FFF !important;
+    padding: 10px;
+}
+
+.sidebar-btn:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    opacity: .9;
+    transition: .5s;
+}
+
+/*--------------
+* END aside
+*/
+/*------------------
+* BEGIN footer
+*/
+footer {
+    margin-top: 5px;
+    background: #5AA428;
+    color: #eee;
+}
+
+footer a {
+    color: #eee;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-stretch: ultra-condensed;
+    border-bottom: 1px solid #FFF;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.footer-contact,
+.footer-navbar {
+    margin-top: 5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-contact li {
+    padding-top: 3px;
+}
+
+.footer-contact .fa {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.footer-navbar>li>a {
+    padding: 5px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.footer-item a:hover {
+    color: #FFF;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse {
+    height: 500px;
+}
+
+
+.list-group {
+    width: 400px !important;
+}
+
+/* Ghi đè màu nền khi hover */
+.btn-primary:hover {
+    background-color: #0cd61d;
+    /* Màu nền khi hover (tùy chọn) */
+    border-color: #ffffff;
+    /* Màu viền khi hover (tùy chọn) */
+}
+
+/* Ghi đè màu chữ khi hover (nếu cần) */
+.btn-primary:hover {
+    color: #ffffff;
+    /* Màu chữ */
+}
+
+
+
+.nav-link.dropdown-toggle.btn-primary {
+    font-size: 18px;
+    /* Điều chỉnh cỡ chữ, ví dụ: 20px */
+}
+
+.btn-primary.nav-link.active {
+    font-size: 19px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    /* Đưa nút xuống giữa chiều cao của carousel */
+    transform: translateY(-50%);
+    /* Căn chỉnh trung tâm theo chiều dọc */
+    background-color: #28a745;
+    /* Nền màu xanh lá */
+    border-radius: 50%;
+    /* Tạo nút hình tròn */
+    width: 50px;
+    /* Chiều rộng nút */
+    height: 50px;
+    /* Chiều cao nút */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    /* Đảm bảo nút không bị mờ */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    /* Đảm bảo mũi tên không có nền */
+    background-size: 50%;
+    /* Tăng kích thước mũi tên */
+    filter: invert(1);
+    /* Đổi mũi tên sang màu trắng nếu cần */
+}
+
+.col-5.bg-primary.text-white.d-flex.align-items-center.justify-content-center {
+
+    background-color: none;
+
+}
+
+
+.footer-item {
+    margin-bottom: 30px;
+}
+
+.footer-navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-navbar li a:hover {
+    color: #535353;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .footer-item {
+        margin-bottom: 20px;
+    }
+}
+
+/*---------------- 
+* END content
+*/

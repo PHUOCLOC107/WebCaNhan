@@ -1,0 +1,25 @@
+@media (min-width: 768px){
+	.container {
+	    max-width: 1170px;
+	    width: 100%;
+	}
+	.dropdown:hover .dropdown-menu {
+	     display: block;
+	     -webkit-animation: fadeInUp 300ms;
+	     animation: fadeInUp 300ms;
+	 }
+}
+@media(max-width: 768px){
+	.navbar-nav .dropdown-menu > li > a{
+		color: #F8F8F8 !important;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	 .navbar-nav > li {
+	   margin-left: 10px;
+	 }
+	 .navbar-collapse {
+	   padding-left: 0;
+	   padding-right: 0;
+	 }
+}

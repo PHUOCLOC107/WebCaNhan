@@ -1,0 +1,109 @@
+.mission-vision {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+  
+  .mission-vision .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .mission-vision .section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5ba52a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .mission-vision .content h3 {
+    color: #5ba52a;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  .mission-vision .content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .mission-vision .content ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .mission-vision .content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-vision .content ul li strong {
+    color: #5ba52a;
+  }
+  
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+.table th {
+    background-color: #5ba52a;
+    color: white;
+    text-align: center;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+.table-striped tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.text-center {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #5ba52a;
+}
+.img img{
+    width: 200px;
+    height: 250px;
+    
+}
+.infor_boss h4{
+    font-weight: 600;
+    font-size: 22px;
+}
+.infor_boss h5{
+    font-size: 20px;
+}
+
+
+.infor h3{
+    color: #5ba52a;
+    font-weight: 600;
+}
+
+.boss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.font_weight{
+    font-weight: 700;
+}
+.information{
+    font-size: 20px;
+}

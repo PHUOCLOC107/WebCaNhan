@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:
+url("https://cdn.glitch.global/54e5b72b-822c-4d2b-ba68-31d059e54104/Zf5YSD7.jpeg?v=1731611818672") center/cover no-repeat;
+}
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+p {
+  color: #fff;
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+button.submit_btn {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+button.submit_btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid #fff;
+}
+
+.wrapper a {
+  color:#fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+</style>
+<body>
+
+  <div class="wrapper">
+    <h2>Register</h2>
+    <p style="font-weight: 600;">Please fill in this form to create an account.</p>
+    <form action="/action_page.php">
+      <div class="input-field">
+        <input type="text" id="email" name="email" required>
+        <label for="email">Enter Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="psw" name="psw" required>
+        <label for="psw">Enter Password</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="psw-repeat" name="psw-repeat" required>
+        <label for="psw-repeat">Repeat Password</label>
+      </div>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="submit_btn">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+
+</body>
+</html>
